@@ -1,9 +1,9 @@
 ##########
 # Config #
 ##########
-set :application,   "Box Idiomes"
+set :application,   "Lo Cabas"
 set :domain,        "s3.flux.cat"
-set :deploy_to,     "/home/flux/webapps/box-idiomes"
+set :deploy_to,     "/home/flux/webapps/locabas"
 set :app_path,      "app"
 set :web_path,      "web"
 set :config_dir,    "/config"
@@ -15,7 +15,7 @@ set :bundles_dir,   "/bundles"
 ##################
 # SCM Repository #
 ##################
-set :repository,        "git@bitbucket.org:dromani/box-idiomes.git"
+set :repository,        "git@bitbucket.org:dromani/locabas.git"
 set :scm,               :git
 set :branch,            "master"
 
