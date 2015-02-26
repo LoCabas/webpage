@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="site-wrapper">
+        <div class="site-wrapper-inner">
+            <div class="cover-container">
+                <div class="inner cover">
+                    <h1 class="sr-only">Box Idiomes</h1>
+                    <img src="{{ asset('bundles/app/images/logo-full-lo.png') }}" alt="Box Idiomes logo" />
+                    <p class="lead">
+                        C/ Góngora, 40<br>
+                        43870 Amposta<br>
+                        (Tarragona)<br><br>
+                        Tel. (+34) 650 539 324<br><br>
+                        <a href="mailto:info@boxidiomes.cat">info@boxidiomes.cat</a>
+                    </p>
+                </div>
+                <div class="mastfoot">
+                    <div class="inner">
+                        <p>website hosted by <a href="http://www.flux.cat">www.flux.cat</a></p>
+                        <p>&copy; {{ 'now' | date('Y') }} · all rights reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
