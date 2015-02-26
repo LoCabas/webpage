@@ -77,4 +77,4 @@ after "deploy", "deploy:cleanup"
 ###########
 # Logging #
 ###########
-#logger.level = Logger::MAX_LEVEL               # Be more verbose by uncommenting this line
+logger.level = Logger::MAX_LEVEL               # Be more verbose by uncommenting this line
