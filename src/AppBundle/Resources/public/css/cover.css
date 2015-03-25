@@ -25,6 +25,7 @@ body {
 }
 
 body {
+    margin-top: 100px;
     color: #000;
     text-align: center;
     text-shadow: 0 1px 3px rgba(255,255,255,.5);
