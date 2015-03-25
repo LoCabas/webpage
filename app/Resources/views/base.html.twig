@@ -14,10 +14,49 @@
             <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
             <link href="{{ asset('bundles/app/css/cover.css') }}" type="text/css" rel="stylesheet" />
         {% endblock %}
+        <!--[if lt IE 9]>
+            <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
         {% block javascriptshead %}{% endblock %}
     </head>
-    <body>
-        {% block body %}{% endblock %}
+    <body{% block bodyattr %}{% endblock %}>
+        <!--[if lt IE 9]>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="alert alert-warning alert-dismissible" role="alert">
+                            <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                            <h2 class="no-m"><span class="icon-warning"></span> {{ 'front.browser.happy' | trans | raw }} <a href="http://browsehappy.com/?locale={{ app.request.locale }}">www.browserhappy.com</a></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <![endif]-->
+        {# Top navbar menu #}
+        <nav class="navbar navbar-default navbar-fixed-top " role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" data-aria-expanded="false" data-aria-controls="navbar">
+                        <span class="sr-only">{{ 'front.toggle' | trans }}</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="{{ path('homepage') }}">LO CABÀS</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        {#<li class="first divider-vertical"></li>#}
+                        <li><a href="http://app.locabas.org"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>&nbsp;App</a></li>
+                        <li><a href="http://plataforma.locabas.org"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbsp;Plataforma</a></li>
+                        <li><a href="mailto:info@locabas.org"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>&nbsp;Contacte</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        {#{% include ':Front/includes:flashes.html.twig' %}#}
+        {% block main %}{% endblock %}
         {% block javascriptsbody %}{% endblock %}
         {#<!-- Google Analytics -->#}
         {% if google_analytics_enabled %}
