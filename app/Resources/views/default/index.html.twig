@@ -1,27 +1,64 @@
 {% extends 'base.html.twig' %}
 
 {% block main %}
-    <div class="site-wrapper">
-        <div class="site-wrapper-inner">
-            <div class="cover-container">
-                <div class="inner cover">
-                    <img class="img-responsive center-block" src="{{ asset('bundles/app/images/logo.jpg') }}" alt="Lo Cabàs logo" />
-                    <h1>LO CABÀS</h1>
-                    <h3 style="margin: 0 0 10px 0">Col·lectiu de Consum Responsable</h3>
-                    <p style="margin-bottom:80px">Amposta (Tarragona)</p>
-                    <p style="margin-bottom:10px" class="lead">
-                        <a class="btn btn-success" href="http://app.locabas.org" target="_blank"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>&nbsp;gestió de comandes</a><br/><br/>
-                        <a class="btn btn-success" href="http://plataforma.locabas.org" target="_blank"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbsp;accedeix a la plataforma</a><br/><br/>
-                        <a class="btn btn-success" href="mailto:info@locabas.org"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>&nbsp;contacta amb nosaltres</a>
-                    </p>
+<div class="container">
+    {# Header #}
+    <div class="row">
+        <div class="col-md-12">
+            <div class="media">
+                <div class="media-left">
+                    <img src="{{ asset('bundles/app/images/logo.jpg') }}" alt="Lo Cabàs image logo" />
                 </div>
-                <div class="mastfoot">
-                    <div class="inner">
-                        <p>website hosted by <a href="http://www.flux.cat">www.flux.cat</a></p>
-                        {#<p>&copy; {{ 'now' | date('Y') }} · all rights reserved</p>#}
-                    </div>
+                <div class="media-body">
+                    <h1 class="no-m-top">LO CABÀS</h1>
+                    <h3 class="no-m-bottom">Col·lectiu de Consum Responsable</h3>
+                    <p class="lead">Amposta</p>
                 </div>
             </div>
         </div>
     </div>
+    {# Body #}
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-success">
+                <div class="panel-heading">
+                    <h2 class="panel-title">Presentació del col·lectiu</h2>
+                </div>
+                <div class="panel-body">
+                    <span class="glyphicon glyphicon-calendar"></span> 24 d'abril de 2015, a les 19:30h<br/>
+                    <span class="glyphicon glyphicon-map-marker"></span> La Collidora. Amposta
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="panel panel-success">
+                <div class="panel-heading">
+                    <h2 class="panel-title">Temes a tractar</h2>
+                </div>
+                <div class="panel-body">
+                    <ul class="no-m-bottom">
+                        <li>Presentació del grup de consum resposnable i transformador</li>
+                        <li>Què és un grup de consum?</li>
+                        <li>Què significa "responsable" per a nosaltres?</li>
+                        <li>Què significa "transformador" per a nosaltres?</li>
+                        <li>Drets i deures del membres</li>
+                        <li>Objectius</li>
+                        <li>Fins on hem arribat</li>
+                        <li>Següents passos</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    {# Footer #}
+    <div class="row">
+        <div class="col-md-12">
+            <div class="btn-group" role="group">
+                <a class="btn btn-success" href="http://app.locabas.org" target="_blank"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>&nbsp;Gestió de comandes</a>
+                <a class="btn btn-success" href="http://plataforma.locabas.org" target="_blank"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbsp;Accedeix a la plataforma</a>
+                <a class="btn btn-success" href="mailto:info@locabas.org"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>&nbsp;Contacta amb nosaltres</a>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}
