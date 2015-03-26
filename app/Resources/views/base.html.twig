@@ -11,7 +11,7 @@
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
         {% block stylesheets %}
             {#<link rel="stylesheet" href="/css/main.css">#}
-            <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
+            <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
             <link href="{{ asset('bundles/app/css/cover.css') }}" type="text/css" rel="stylesheet" />
         {% endblock %}
         <!--[if lt IE 9]>
@@ -69,6 +69,8 @@
                 </div>
             </div>
         </footer>
+        <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
         {% block javascriptsbody %}{% endblock %}
         {#<!-- Google Analytics -->#}
         {% if google_analytics_enabled %}
