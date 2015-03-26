@@ -1,27 +1,34 @@
 {% extends 'base.html.twig' %}
 
 {% block main %}
-    <div class="site-wrapper">
-        <div class="site-wrapper-inner">
-            <div class="cover-container">
-                <div class="inner cover">
-                    <img class="img-responsive center-block" src="{{ asset('bundles/app/images/logo.jpg') }}" alt="Lo Cabàs logo" />
-                    <h1>LO CABÀS</h1>
-                    <h3 style="margin: 0 0 10px 0">Col·lectiu de Consum Responsable</h3>
-                    <p style="margin-bottom:80px">Amposta (Tarragona)</p>
-                    <p style="margin-bottom:10px" class="lead">
-                        <a class="btn btn-success" href="http://app.locabas.org" target="_blank"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>&nbsp;gestió de comandes</a><br/><br/>
-                        <a class="btn btn-success" href="http://plataforma.locabas.org" target="_blank"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbsp;accedeix a la plataforma</a><br/><br/>
-                        <a class="btn btn-success" href="mailto:info@locabas.org"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>&nbsp;contacta amb nosaltres</a>
-                    </p>
-                </div>
-                <div class="mastfoot">
-                    <div class="inner">
-                        <p>website hosted by <a href="http://www.flux.cat">www.flux.cat</a></p>
-                        {#<p>&copy; {{ 'now' | date('Y') }} · all rights reserved</p>#}
-                    </div>
-                </div>
-            </div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-2">
+            <img class="img-responsive" src="{{ asset('bundles/app/images/logo.jpg') }}" alt="Lo Cabàs image logo" />
+            <h1>LO CABÀS</h1>
+            <h3>Col·lectiu de Consum Responsable</h3>
+            <p>Amposta (Tarragona)</p>
+        </div>
+        <div class="col-md-10">
+            TT
         </div>
     </div>
+</div>
+    {#<div class="site-wrapper">#}
+        {#<div class="site-wrapper-inner">#}
+            {#<div class="cover-container">#}
+                {#<div class="inner cover">#}
+                    {#<img class="img-responsive center-block" src="{{ asset('bundles/app/images/logo.jpg') }}" alt="Lo Cabàs logo" />#}
+                    {#<h1>LO CABÀS</h1>#}
+                    {#<h3 style="margin: 0 0 10px 0">Col·lectiu de Consum Responsable</h3>#}
+                    {#<p style="margin-bottom:80px">Amposta (Tarragona)</p>#}
+                    {#<p style="margin-bottom:10px" class="lead">#}
+                        {#<a class="btn btn-success" href="http://app.locabas.org" target="_blank"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>&nbsp;gestió de comandes</a><br/><br/>#}
+                        {#<a class="btn btn-success" href="http://plataforma.locabas.org" target="_blank"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbsp;accedeix a la plataforma</a><br/><br/>#}
+                        {#<a class="btn btn-success" href="mailto:info@locabas.org"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>&nbsp;contacta amb nosaltres</a>#}
+                    {#</p>#}
+                {#</div>#}
+                {##}
+            {#</div>#}
+        {#</div>#}
 {% endblock %}
