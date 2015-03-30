@@ -2,6 +2,7 @@
 /app/cache/*
 !app/cache/.gitkeep
 /app/config/parameters.yml
+/app/config/deploy.rb
 /app/databases/*
 !app/databases/.gitkeep
 /app/logs/*
